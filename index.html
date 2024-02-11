@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Acceuil</title>
+    <title>Aurès AZ</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="chemin/vers/ton/logo.png" alt="Ton Logo">
+            <img src="images/mon-logo.png" alt="Mon Logo">
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="liens-droite">
-            <a href="lien-vers-ton-github"><img src="chemin/vers/github.png" alt="GitHub"></a>
-            <a href="lien-vers-ton-linkedin"><img src="chemin/vers/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Evelisx"><img src="images/icons8-github-48.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/aures-assogba-zehe"><img src="images/icons8-linkedin-50.png" alt="LinkedIn"></a>
         </div>
     </header>
     <main>
-        <section class="portfolio-section">
+        <section class="portfolio-section" id ="about">
             <img src="images/mon-avatar.png" alt="Mon avatar" class="mon-avatar">
             <div>
-                <h1>Un premier titre</h1>
+                <h1><span id="animation1">Web Developer</span> <br>Junior</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus nisl. Sed risus mauris, vulputate non sagittis vitae, ultricies eu augue. Etiam molestie nisl in rutrum commodo. Quisque mollis augue eget lectus gravida, sit amet ultrices augue dignissim. Fusce a felis nisi. Duis quis orci id odio varius interdum. Nullam condimentum, libero ac tristique eleifend, libero enim pulvinar tortor, ac porta nulla dolor eget tellus. Aliquam tellus lectus, interdum id est ut, feugiat ultrices velit. Nullam ligula dui, condimentum sed elementum sed, dictum et ipsum.  
                 </p>
@@ -39,15 +38,27 @@
             </div>
         </section>
         <section class="portfolio-section">
-                <h2>Experience width</h2>
-            <div class="skill-icone">
-                <img src="images/icons8-html-5-96.png" alt="html5">
-                <img src="images/icons8-css3-96.png" alt="css3">
-                <img src="images/icons8-javascript-96.png" alt="Javascript">
-                <img src="images/Sql_data_base_with_logo.png" alt="sql">
+                <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <img src="images/icons8-html-5-96.png" class="skill-img" alt="html5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus nisl. Sed risus mauris, vulputate non sagittis vitae, ultricies eu augue. Etiam molestie nisl in rutrum commodo. Quisque mollis augue eget lectus gravida, sit amet ultrices augue dignissim. Fusce a felis nisi. Duis quis orci id odio varius interdum. Nullam condimentum, libero ac tristique eleifend, libero enim pulvinar tortor, ac porta nulla dolor eget tellus. Aliquam tellus lectus, interdum id est ut, feugiat ultrices velit. Nullam ligula dui, condimentum sed elementum sed, dictum et ipsum. </p>
+                </div>
+                <div>
+                    <img src="images/icons8-css3-96.png" class="skill-img" alt="css3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus nisl. Sed risus mauris, vulputate non sagittis vitae, ultricies eu augue. Etiam molestie nisl in rutrum commodo. Quisque mollis augue eget lectus gravida, sit amet ultrices augue dignissim. Fusce a felis nisi. Duis quis orci id odio varius interdum. Nullam condimentum, libero ac tristique eleifend, libero enim pulvinar tortor, ac porta nulla dolor eget tellus. Aliquam tellus lectus, interdum id est ut, feugiat ultrices velit. Nullam ligula dui, condimentum sed elementum sed, dictum et ipsum. </p>
+                </div>
+                <div>
+                    <img src="images/icons8-javascript-96.png" class="skill-img" alt="Javascript">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus nisl. Sed risus mauris, vulputate non sagittis vitae, ultricies eu augue. Etiam molestie nisl in rutrum commodo. Quisque mollis augue eget lectus gravida, sit amet ultrices augue dignissim. Fusce a felis nisi. Duis quis orci id odio varius interdum. Nullam condimentum, libero ac tristique eleifend, libero enim pulvinar tortor, ac porta nulla dolor eget tellus. Aliquam tellus lectus, interdum id est ut, feugiat ultrices velit. Nullam ligula dui, condimentum sed elementum sed, dictum et ipsum. </p>
+                </div>
+                <div>
+                    <img src="images/Sql_data_base_with_logo.png" class="skill-img" alt="sql">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus nisl. Sed risus mauris, vulputate non sagittis vitae, ultricies eu augue. Etiam molestie nisl in rutrum commodo. Quisque mollis augue eget lectus gravida, sit amet ultrices augue dignissim. Fusce a felis nisi. Duis quis orci id odio varius interdum. Nullam condimentum, libero ac tristique eleifend, libero enim pulvinar tortor, ac porta nulla dolor eget tellus. Aliquam tellus lectus, interdum id est ut, feugiat ultrices velit. Nullam ligula dui, condimentum sed elementum sed, dictum et ipsum. </p>
+                </div>
             </div>
         </section>
-        <section class="portfolio-section">
+        <section class="portfolio-section" id="experience">
             <h2>Project</h2>
             <div class="images-projets">
                 <div class="projet">
@@ -73,15 +84,16 @@
     </main>
     <footer>
         <div>
-            <h2>Contact</h2>
+            <h2 id="contact">Contact</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus nisl. Sed risus mauris, vulputate non sagittis vitae, ultricies eu augue. Etiam molestie nisl in rutrum commodo. Quisque mollis augue eget lectus gravida, sit amet ultrices augue dignissim. Fusce a felis nisi. Duis quis orci id odio varius interdum. Nullam condimentum, libero ac tristique eleifend, libero enim pulvinar tortor, ac porta nulla dolor eget tellus. Aliquam tellus lectus, interdum id est ut, feugiat ultrices velit. Nullam ligula dui, condimentum sed elementum sed, dictum et ipsum. <br> assogbazeheaures@gmail.com
             </p>
         </div>
         <div>
-            <a href="lien-vers-ton-github"><img src="chemin/vers/github.png" alt="GitHub"></a>
-            <a href="lien-vers-ton-linkedin"><img src="chemin/vers/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Evelisx"><img src="images/icons8-github-48.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/aures-assogba-zehe"><img src="images/icons8-linkedin-50.png" alt="LinkedIn"></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
