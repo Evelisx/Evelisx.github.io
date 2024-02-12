@@ -2,7 +2,10 @@ body {
     background-color: white;
     color: black;
     font-family: Arial, sans-serif;
+    font-size:large;
+    transition: all 0.3s ease;
 }
+
 main{
     padding: 50px;
 }
@@ -130,9 +133,91 @@ footer {
 .liens-droite a {
     padding-right: 20px;
 }
-#contact {
+.contact h2{
     color: black;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
 }
 .skill-img {
     max-width: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    color: white;
+}
+
+.form-nom-email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+    form {
+        width: 60%; /* Ajuste la largeur du formulaire pour les écrans de taille moyenne */
+    }
+
+    .form-nom-email {
+        flex-direction: row; /* Change la direction de la mise en page en ligne sur les écrans de taille moyenne et supérieure */
+    }
+
+    .form-column {
+        margin-bottom: 0; /* Supprime la marge en bas des colonnes sur les écrans de taille moyenne et supérieure */
+    }
+
+    .form-column:first-child {
+        margin-right: 20px; /* Ajoute une marge à droite uniquement à la première colonne sur les écrans de taille moyenne et supérieure */
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1600px) {
+    .skills {
+        padding: 0 15vw;
+    }
+    .top-left,
+    .bottom-right {
+        width: 48%;
+    }
+    .top-left div,
+    .bottom-right div {
+        margin-bottom: 30px;
+    }
+    .start {
+        display: flex;
+        flex-direction: column;
+    }
 }

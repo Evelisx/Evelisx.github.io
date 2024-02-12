@@ -12,3 +12,5 @@ function toggleText() {
 }
 // Appeler la fonction toggleText() toutes les 2 secondes
 setInterval(toggleText, 2000);
+
+
